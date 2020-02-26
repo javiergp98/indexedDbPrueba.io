@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+    <script src="js/ManejadorDB.js"></script>
+    <script src="js/Producto.js"></script>
+    <script src="js/ej5.js"></script>
+</head>
+<body class="bg-dark">
+<div class="mt-4 container text-light">
+    <h1>Administrador de productos</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">precioUnidad</th>
+            <th scope="col">Marca</th>
+        </tr>
+        </thead>
+        <tbody id="bodyTabla"></tbody>
+    </table>
+    <div class="p-3 bg-light text-dark">
+        <h2>Emplea el siguiente formulario para añadir productos</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre del producto:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Item">
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Número de unidades:</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio por unidad:</label>
+                <input type="number" class="form-control" id="precio" placeholder="Precio">
+            </div>
+            <div class="form-group">
+                <label for="marca">Marca del producto:</label>
+                <input type="text" class="form-control" id="marca" placeholder="Marca">
+            </div>
+            <button id="btnAdd" type="submit" class="btn btn-info">Añadir producto</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
